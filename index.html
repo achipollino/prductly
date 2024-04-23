@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productly</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sass/style.css">
 </head>
 <body>
     <header class="header">
-        <div class="wrapper">
+        <div class="wrapper header__wrapper">
             <a href="#" class="logo"><img src="./img/Logo.svg" alt="Productly LCC"></a>
             <nav class="header__navigation">
                 <ul class="navigation">
-                    <li>Home</li>
-                    <li>Services</li>
-                    <li>About</li>
-                    <li>Product</li>
+                    <li class="navigation__link">Home</li>
+                    <li class="navigation__link">Services</li>
+                    <li class="navigation__link">About</li>
+                    <li class="navigation__link">Product</li>
                 </ul>
             </nav>
             <div class="header__buttons">
@@ -26,7 +26,7 @@
         </div>
     </header>
     <section class="promo">
-        <div class="wrapper">
+        <div class="wrapper promo__wrapper">
             <div class="promo__content">
                 <h1>The Design Thinking superpowers</h1>
                 <p>Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
@@ -42,7 +42,8 @@
         </div>
     </section>
     <section class="tools">
-        <h2 class="tools__title">We design tools to unveil your superpowers</h2>
+        <div class="wrapper">
+            <h2 class="tools__title">We design tools to unveil your superpowers</h2>
         <div class="layout-4-column">
             <div class="tool">
                 <div class="tool__icon">
@@ -84,6 +85,7 @@
                 <button class="button button_colored">Sign Up Now</button>
             </div>
         </div>
+        </div>
     </section>
     <section class="strategies">
         <div class="wrapper">
@@ -121,7 +123,7 @@
                     </div>
                 </article>
                 <article class="strategy strategy_wide block-shadowed">
-                    <img class="strategy__image" src="./img/strategies/4.jpg" alt="strategy">
+                    <img class="strategy__image" src="./img/strategies/4.png" alt="strategy">
                     <h3 class="strategy__name">Success Steps For Your Personal Or Business Life Plus Funny Image on the Back</h3>
                     <div class="strategy__tags tags">
                         <span class="tag tag_colored">Culture</span>
@@ -130,7 +132,7 @@
                     </div>
                 </article>
                 <article class="strategy block-shadowed">
-                    <img class="strategy__image" src="./img/strategies/5.jpg" alt="strategy">
+                    <img class="strategy__image" src="./img/strategies/5.png" alt="strategy">
                     <h3 class="strategy__name">Increasing Prosperity With Positive Thinking</h3>
                     <div class="strategy__tags tags">
                         <span class="tag tag_colored">Design</span>

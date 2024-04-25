@@ -1,0 +1,29 @@
+.tools__wrapper {
+    padding-bottom: 90px;
+    background-image: url('../../img/backgrounds/Bg.png');
+    background-position: center bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.tools__title {
+    max-width: 462px;
+    margin: auto;
+    text-align: center;
+    color: $color-heading;
+    margin-top: 80px;
+    margin-bottom: 70px;
+}
+
+.tools__button {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.tool_title {
+    margin: 0 0 16px;
+}
+
+.tool__icon {
+    margin-bottom: 30px;
+}

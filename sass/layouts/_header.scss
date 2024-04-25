@@ -1,6 +1,6 @@
 .header {
     background: $color-light;
-    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+    @extend %shadow;
     padding: 15px 0 17px 0;
 }
 

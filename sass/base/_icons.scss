@@ -24,6 +24,18 @@
     };
 }
 
+.icon-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    &_white {
+        background-color: $color-light;
+    };
+}
+
 .ico_play {
     @include ico(18px, 19px, url('../../img/icons/play.svg'));
 }
@@ -42,4 +54,12 @@
 
 .ico_clock {
     @include ico(15px, 17px, url('../../img/icons/clock.svg'));
+}
+
+.ico_phone {
+    @include ico(15px, 15px, url('../../img/icons/phone.svg'));
+}
+
+.ico_letter {
+    @include ico(11px, 8px, url('../../img/icons/mail.svg'));
 }

@@ -3,6 +3,27 @@
     padding: 62px 82px;
 }
 
+.contact-us__text {
+    margin: 0 0 34px;
+}
+
+.contact-us__link {
+    display: flex;
+    align-items: center;
+    @include font(1.6rem, 2.6rem, 400);
+    a {
+        margin-left: 11px;
+        color: $color-text;
+        text-decoration: none;
+        @include font(2.5rem, 2.6rem, 400);
+    }
+    &:hover {
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
 .contact-us__form {
     input, textarea {
         border: 1px solid $color-light;

@@ -25,8 +25,8 @@
 }
 
 .icon-circle {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     display: inline-flex;
     align-items: center;
@@ -61,5 +61,5 @@
 }
 
 .ico_letter {
-    @include ico(11px, 8px, url('../../img/icons/mail.svg'));
+    @include ico(11px, 9px, url('../../img/icons/mail.svg'));
 }

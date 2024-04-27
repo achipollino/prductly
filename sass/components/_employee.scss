@@ -1,0 +1,26 @@
+.employee {
+    display: flex;
+    padding: 35px;
+}
+
+.employee__photo {
+    width: 98px;
+    height: 98px;
+    border-radius: 50%;
+}
+
+.employee__name {
+    margin: 0;
+    color: $color-text;
+}
+
+.employee__title {
+    @include font(1.4rem, 0rem, normal);
+    color: $color-text;
+}
+
+.employee__contact {
+    @include font(1.4rem, 0rem, normal);
+    color: $color-link;
+    text-decoration: none;
+}

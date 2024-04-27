@@ -5,3 +5,25 @@
 .footer__wrapper {
     display: flex;
 }
+
+.footer-navigation {
+    flex-grow: 1;
+    margin-left: 152px;
+}
+
+.footer-navigation__title {
+    margin: 0 0 15px;
+}
+
+.footer-navigation__links {
+    @extend %font-add;
+    a {
+        color: $color-text;
+        text-decoration: none;
+        @extend %transition;
+        @include font(1.6rem, 3.5rem, normal);
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}

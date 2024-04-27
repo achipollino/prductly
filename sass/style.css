@@ -401,7 +401,7 @@ ul {
   box-sizing: border-box;
 }
 
-.navigation__link, .logo-path {
+.navigation__link, .footer-navigation__links a, .logo-path {
   transition: all 0.3s ease-out;
 }
 
@@ -413,7 +413,7 @@ ul {
   font-family: "Open Sans", Verdana, sans-serif;
 }
 
-.promo__text, .link-button, h1 {
+.promo__text, .footer-navigation__links, .link-button, h1 {
   font-family: "Poppins", Verdana, sans-serif;
 }
 
@@ -676,6 +676,27 @@ h5 {
   display: flex;
 }
 
+.footer-navigation {
+  flex-grow: 1;
+  margin-left: 152px;
+}
+
+.footer-navigation__title {
+  margin: 0 0 15px;
+}
+
+.footer-navigation__links a {
+  color: #544837;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 3.5rem;
+}
+.footer-navigation__links a:hover {
+  color: #FF9900;
+}
+
 .contact-us {
   background: #FFEEE1;
   padding: 62px 82px;
@@ -837,6 +858,51 @@ h5 {
 
 .block-shadowed {
   border-radius: 10px;
+}
+
+.about-us {
+  padding: 30px 0 100px 0;
+}
+
+.about-us__title {
+  margin: 0 0 14px;
+}
+
+.about-us__description {
+  margin: 0 0 45px;
+}
+
+.employee {
+  display: flex;
+  padding: 35px;
+}
+
+.employee__photo {
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+}
+
+.employee__name {
+  margin: 0;
+  color: #544837;
+}
+
+.employee__title {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 0rem;
+  color: #544837;
+}
+
+.employee__contact {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 0rem;
+  color: #1943EF;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -444,6 +444,14 @@ h1 {
   font-weight: bold;
   line-height: 54px;
 }
+@media (max-width: 414px) {
+  h1 {
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 54px;
+  }
+}
 
 h2 {
   font-size: 3.4rem;
@@ -513,6 +521,14 @@ h5 {
 .link-button__text {
   margin-left: 9px;
   font-weight: 600;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo-object {
+  width: 160px;
 }
 
 .logo-svg:hover .logo-path {
@@ -663,7 +679,17 @@ h5 {
 }
 @media (max-width: 768px) {
   .header__wrapper {
-    padding-left: 24px;
+    padding-left: 20px;
+  }
+}
+
+.header__logo-line {
+  display: flex;
+}
+
+@media (max-width: 414px) {
+  .header__buttons {
+    display: none;
   }
 }
 
@@ -798,6 +824,7 @@ h5 {
 
 .promo {
   padding: 30px 0;
+  overflow: hidden;
 }
 
 .promo__wrapper {
@@ -808,6 +835,11 @@ h5 {
 
 .promo__content {
   padding-right: 66px;
+}
+@media (max-width: 768px) {
+  .promo__content {
+    padding-right: 0;
+  }
 }
 
 .promo__title {
@@ -823,9 +855,21 @@ h5 {
   font-weight: 400;
   line-height: 2.8rem;
 }
+@media (max-width: 768px) {
+  .promo__text {
+    width: 360px;
+  }
+}
 
+.promo__buttons {
+  display: flex;
+  align-items: center;
+}
 .promo__buttons > * {
   margin-right: 44px;
+}
+.promo__buttons > *:last-child {
+  margin-right: 0;
 }
 
 .navigation {

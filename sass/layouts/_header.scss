@@ -9,7 +9,17 @@
     align-items: center;
     justify-content: space-between;
     @include media-tablet {
-        padding-left: 24px;
+        padding-left: 20px;
+    }
+}
+
+.header__logo-line {
+    display: flex;
+}
+
+.header__buttons {
+    @include media-mobile {
+        display: none;
     }
 }
 

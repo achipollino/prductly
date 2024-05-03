@@ -11,7 +11,7 @@ h1 {
     @extend %font-add;
     @include font(4.4rem, 54px, bold);
     @include media-mobile {
-        @include font(3.2rem, 54px, bold);
+        @include font(3.2rem, 42px, bold);
     }
 }
 

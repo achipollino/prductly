@@ -16,17 +16,31 @@ h1 {
 }
 
 h2 {
-    @include font(3.4rem, 46px, bold)
+    @include font(3.4rem, 46px, bold);
+    @include media-mobile {
+        @include font(2.4rem, 33px, bold);
+    }
 }
 
 h3 {
-    @include font(2.4rem, 34px, 600)
+    @include font(2.4rem, 34px, 600);
+    @include media-mobile {
+        @include font(2.1rem, 31px, bold);
+    }
 }
 
 h4 {
-    @include font(2.2rem, 30px, 600)
+    @include font(2.2rem, 30px, 600);
+    @include media-tablet {
+        @include font(2.0rem, 30px, 600);
+    }
 }
 
 h5 {
     @include font(1.6rem, 26px, bold)
+}
+
+.block-shadowed {
+    @extend %shadow;
+    border-radius: 10px;
 }

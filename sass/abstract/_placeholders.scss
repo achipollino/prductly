@@ -13,13 +13,3 @@
 %font-add {
     font-family: 'Poppins', Verdana, sans-serif;
 }
-
-%hamburger__line {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    background: $color-hamburger;
-    border-radius: 5px;
-    width: 100%;
-    height: 3px;
-}

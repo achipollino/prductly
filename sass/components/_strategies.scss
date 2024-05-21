@@ -18,26 +18,48 @@
     @include media-tablet {
         justify-content: center;
     }
-} 
+}
 
 .strategy__wrapper {
     >* {
         margin-bottom: 30px;
         @include media-tablet {
-            width: 48px;
+            flex-basis: 48%;
         }
+        @include media-mobile {
+            flex-basis: 100%;
+        }
+    }
+}
+
+.strategy {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0 0 30px;
+    @include media-tablet {
+        overflow: hidden;
+        padding-top: 200px;
     }
 }
 
 .strategy__content {
     padding: 24px 33px 26px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .strategy__name {
     margin: 0 0 29px;
+    text-align: left;
+    flex-grow: 1;
 }
 
-.block-shadowed {
-    @extend %shadow;
-    border-radius: 10px;
+.strategy__image {
+    @include media-tablet {
+        position: absolute;
+        top: 0;
+    }
 }

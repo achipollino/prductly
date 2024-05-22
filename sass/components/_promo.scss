@@ -41,6 +41,9 @@
 }
 
 .promo__image {
+    @include media-tablet {
+        max-width: 85%;
+    }
     @include media-mobile {
         max-width: 100%;
         margin-bottom: 16px;

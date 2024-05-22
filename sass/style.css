@@ -780,14 +780,35 @@ h5 {
 .footer {
   padding: 60px 0 70px;
 }
+@media (max-width: 414px) {
+  .footer {
+    padding: 31px 0;
+  }
+}
 
 .footer__wrapper {
   display: flex;
 }
+@media (max-width: 768px) {
+  .footer__wrapper {
+    flex-direction: column;
+  }
+}
 
 .footer-navigation {
   flex-grow: 1;
-  margin-left: 152px;
+  padding-left: 152px;
+}
+@media (max-width: 768px) {
+  .footer-navigation {
+    padding-left: 0;
+    margin-top: 34px;
+  }
+}
+@media (max-width: 414px) {
+  .footer-navigation {
+    flex-direction: column;
+  }
 }
 
 .footer-navigation__title {
@@ -808,7 +829,32 @@ h5 {
 
 .contact-us {
   background: #FFEEE1;
-  padding: 62px 82px;
+  padding: 62px 0;
+}
+@media (max-width: 768px) {
+  .contact-us {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-us-container {
+    flex-direction: column;
+  }
+}
+
+.contact-us__title {
+  margin: 0 0 17px;
+}
+
+.contact-us__content {
+  max-width: 520px;
+}
+@media (max-width: 768px) {
+  .contact-us__content {
+    max-width: 100%;
+    margin-bottom: 52px;
+  }
 }
 
 .contact-us__text {
@@ -816,12 +862,18 @@ h5 {
 }
 
 .contact-us__link {
+  margin: 0 0 19px;
   display: flex;
   align-items: center;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
   line-height: 2.6rem;
+}
+@media (max-width: 768px) {
+  .contact-us__link {
+    justify-content: center;
+  }
 }
 .contact-us__link a {
   margin-left: 11px;
@@ -855,9 +907,23 @@ h5 {
 .contact-us__line {
   margin-bottom: 19px;
 }
+@media (max-width: 414px) {
+  .contact-us__line {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .contact-us__line > * {
+    margin-bottom: 19px;
+  }
+}
 
 .contact-us__button > * {
   min-width: 117px;
+}
+@media (max-width: 414px) {
+  .contact-us__button {
+    margin-top: 24px;
+  }
 }
 
 .promo {
@@ -914,6 +980,11 @@ h5 {
   }
 }
 
+@media (max-width: 768px) {
+  .promo__image {
+    max-width: 85%;
+  }
+}
 @media (max-width: 414px) {
   .promo__image {
     max-width: 100%;
@@ -1015,6 +1086,16 @@ h5 {
 .tools__button {
   margin-top: 60px;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .tools__button {
+    margin-top: 0;
+  }
+}
+@media (max-width: 414px) {
+  .tools__button {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 1197px) {

@@ -44,6 +44,12 @@
 .tools__button {
     margin-top: 60px;
     text-align: center;
+    @include media-tablet {
+        margin-top: 0;
+    }
+    @include media-mobile {
+        margin-top: 0;
+    }
 }
 
 .tool__title {

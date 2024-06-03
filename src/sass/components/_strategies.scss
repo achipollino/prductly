@@ -38,6 +38,9 @@
     flex-direction: column;
     position: relative;
     margin: 0 0 30px;
+    &_hidden {
+        display: none;
+    }
     @include media-tablet {
         overflow: hidden;
         padding-top: 200px;

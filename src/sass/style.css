@@ -401,7 +401,7 @@ ul {
   box-sizing: border-box;
 }
 
-.navigation__link, .footer-navigation__links a, .logo-path {
+.navigation__link, .footer-navigation__links a, .tag_selected, .logo-path {
   transition: all 0.3s ease-out;
 }
 
@@ -655,6 +655,7 @@ h5 {
 }
 .tag_selected {
   background-color: #FF9900;
+  border: 1px solid #FF9900;
   color: #FFFFFF;
 }
 .tag_bordered {
@@ -1176,6 +1177,9 @@ h5 {
   flex-direction: column;
   position: relative;
   margin: 0 0 30px;
+}
+.strategy_hidden {
+  display: none;
 }
 @media (max-width: 768px) {
   .strategy {

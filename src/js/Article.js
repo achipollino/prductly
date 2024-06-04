@@ -27,7 +27,7 @@ export class Article {
                 tamplate += `<div class="strategy__tags tags">`
 
                 this.tags.map(tag => {
-                    template += `<span class="tag tag_colored">${tag}</span>`
+                    tamplate += `<span class="tag tag_colored">${tag}</span>`
                 })
 
                 tamplate += `</div>`
@@ -36,7 +36,7 @@ export class Article {
             tamplate += `</div>`
         }
 
-        article.innerHTML = template;
+        article.innerHTML = tamplate;
         return article;
     }
 }

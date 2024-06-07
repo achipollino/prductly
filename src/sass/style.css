@@ -401,7 +401,7 @@ ul {
   box-sizing: border-box;
 }
 
-.navigation__link, .footer-navigation__links a, .tag_selected, .logo-path {
+.navigation__link, .footer-navigation__links a, .tag_selected, .logo-path, .link-button {
   transition: all 0.3s ease-out;
 }
 

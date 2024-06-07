@@ -33,6 +33,7 @@
     @extend %font-add;
     display: inline-flex;
     align-items: center;
+    @extend %transition;
     &:hover {
         color: $color-additional;
     }

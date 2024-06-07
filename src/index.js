@@ -1,4 +1,6 @@
 import { Article } from "./js/Article";
+import { Modal } from "./js/Modal";
+import { ArticleModal } from "./js/ArticleModal";
 
 const data = [
     {
@@ -76,6 +78,9 @@ window.onload = function() {
 
     // Tags
     addTagsClickHandler();
+
+    // Generate Base Modal from Modal Class
+    addToolsClickHandler();
 }
 
 const addTagsClickHandler = () => {
@@ -130,6 +135,8 @@ const renderArticlesToDom = () => {
     generateArticles(data).forEach(article => {
         strategiesWrapper.append(article.generateArticle())
     })
+
+    addStrategyClickHandler();
 }
 
 const getStrategiesWrapper = () => {
@@ -144,4 +151,39 @@ const generateArticles = (data) => {
         articles.push(new Article(article))
     });
     return articles;
+}
+
+const addToolsClickHandler = () => {
+    document.querySelector('.tools__button .button').addEventListener('click', () => {
+        generateToolsModal();
+    })
+}
+
+const generateToolsModal = () => {
+    renderModalWindow('test');
+}
+
+const renderModalWindow = (content) => {
+    let modal = new Modal('tools-modal');
+    modal.buildModal(content);
+}
+
+const addStrategyClickHandler = () => {
+    document.querySelector('.strategy-wrapper').addEventListener('click', (e) => {
+        if (e.target.closest('.strategy')) {
+            let clickedStrategyId = e.target.closest('.strategy').getAttribute('data-id');
+            let clickedStrategyData = getClickedData(clickedStrategyId);
+
+            renderArticleModalWindow(clickedStrategyData);
+        }
+    })
+}
+
+const getClickedData = (id) => {
+    return data.find(article => article.id == id)
+}
+
+const renderArticleModalWindow = (article) => {
+    let modal =  new ArticleModal ('article-modal', article);
+    modal.renderModal();
 }

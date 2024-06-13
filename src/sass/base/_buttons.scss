@@ -36,6 +36,9 @@
     @extend %transition;
     &:hover {
         color: $color-additional;
+        .ico_play {
+            @extend %ico_play-hover;
+        }
     }
 }
 

@@ -169,7 +169,7 @@ const renderModalWindow = (content) => {
 }
 
 const addStrategyClickHandler = () => {
-    document.querySelector('.strategy-wrapper').addEventListener('click', (e) => {
+    document.querySelector('.strategy__wrapper').addEventListener('click', (e) => {
         if (e.target.closest('.strategy')) {
             let clickedStrategyId = e.target.closest('.strategy').getAttribute('data-id');
             let clickedStrategyData = getClickedData(clickedStrategyId);

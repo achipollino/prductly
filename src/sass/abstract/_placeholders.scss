@@ -14,6 +14,11 @@
     font-family: 'Poppins', Verdana, sans-serif;
 }
 
+%ico_play-hover {
+  @include ico(18px, 19px, url('../../img/icons/play-red.svg'));
+  transition: all .3s ease-out;
+}
+
 %custom-scroll {
     &::-webkit-scrollbar {
       width: 5px;

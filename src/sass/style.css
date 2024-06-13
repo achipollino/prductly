@@ -417,6 +417,13 @@ ul {
   font-family: "Poppins", Verdana, sans-serif;
 }
 
+.link-button:hover .ico_play {
+  background-image: url("../../img/icons/play-red.svg");
+  width: 18px;
+  height: 19px;
+  transition: all 0.3s ease-out;
+}
+
 .modal::-webkit-scrollbar {
   width: 5px;
 }
@@ -546,7 +553,6 @@ h5 {
 .link-button:hover {
   color: #FF7549;
 }
-
 .link-button__text {
   margin-left: 9px;
   font-weight: 600;

@@ -80,7 +80,7 @@ window.onload = function() {
     addTagsClickHandler();
 
     // Generate Base Modal from Modal Class
-    addToolsClickHandler();
+    //addToolsClickHandler();
 }
 
 const addTagsClickHandler = () => {
@@ -153,20 +153,20 @@ const generateArticles = (data) => {
     return articles;
 }
 
-const addToolsClickHandler = () => {
-    document.querySelector('.tools__button .button').addEventListener('click', () => {
-        generateToolsModal();
-    })
-}
+//const addToolsClickHandler = () => {
+//    document.querySelector('.tools__button .button').addEventListener('click', () => {
+//        generateToolsModal();
+//    })
+//}
 
-const generateToolsModal = () => {
-    renderModalWindow('test');
-}
+//const generateToolsModal = () => {
+//   renderModalWindow('test');
+//}
 
-const renderModalWindow = (content) => {
-    let modal = new Modal('tools-modal');
-    modal.buildModal(content);
-}
+//const renderModalWindow = (content) => {
+//    let modal = new Modal('tools-modal');
+//    modal.buildModal(content);
+//}
 
 const addStrategyClickHandler = () => {
     document.querySelector('.strategy__wrapper').addEventListener('click', (e) => {
